@@ -1,8 +1,6 @@
 public class Simulator {
     /**
-     *
      *  simulates the generic stack functionality
-     *
      */
     private Stack stack;
 
