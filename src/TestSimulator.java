@@ -1,13 +1,22 @@
 import static org.junit.Assert.*;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class TestSimulator{
+    private static Simulator stack;
 
-    @BeforeClass
-    public static void initialiseStacK(){
-        Stack stack = new Stack();
+    @Test
+    public void testingPushFunction(){
+        Simulator stack = new Simulator();
+        stack.push("first");
+        stack.push("second");
+        stack.push("third");
+        ArrayList<String> testStack = new ArrayList<String>();
+        testStack.add("first");
+        testStack.add("second");
+        testStack.add("third");
+        assertEquals(testStack, stack.getStack().getStack());
     }
-
 
 }

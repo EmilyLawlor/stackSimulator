@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Stack {
     /**
@@ -8,12 +7,16 @@ public class Stack {
      * element at the top of the stack and to view the entire stack
      *
      */
-    private List<String> stack;
+    private ArrayList<String> stack;
     private int cursor;
 
     public Stack() {
-        this.stack = new ArrayList<String>();
+        this.stack = new ArrayList<>();
         this.cursor = 0;
+    }
+
+    public ArrayList<String> getStack() {
+        return stack;
     }
 
     /**

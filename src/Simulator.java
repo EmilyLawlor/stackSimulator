@@ -11,6 +11,10 @@ public class Simulator {
         stack = new Stack();
     }
 
+    public Stack getStack() {
+        return stack;
+    }
+
     /**
      * adds the element "text" to the top of the stack
      * @param text element of type String to be added to teh stack
