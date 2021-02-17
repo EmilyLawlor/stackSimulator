@@ -19,4 +19,15 @@ public class TestSimulator{
         assertEquals(testStack, stack.getStack().getStack());
     }
 
+
+    @Test
+    public void testingPopFunction() {
+        Simulator stack = new Simulator();
+        stack.push("first");
+        stack.push("second");
+        stack.push("third");
+        String element = stack.pop();
+        assertEquals("third", element);
+    }
+
 }
