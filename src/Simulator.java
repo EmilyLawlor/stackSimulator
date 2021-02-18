@@ -13,6 +13,13 @@ public class Simulator {
         stack = new Stack();
     }
 
+
+    public static void main(String args[]){
+        String input = args[0];
+        System.out.println(input);
+        System.out.println("hi");
+    }
+
     /**
      * adds the element "text" to the top of the stack
      * @param text element of type String to be added to teh stack
@@ -36,4 +43,5 @@ public class Simulator {
     public void show() {
         this.stack.print();
     }
+
 }
