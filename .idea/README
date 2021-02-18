@@ -1,0 +1,19 @@
+# Directory structure
+source code found in directory src
+
+
+
+# Branches
+java - where all java implemtion should be added  
+testing - used to implement JUnit tests for the java classes  
+documentation - all documentation, including JavaDoc comments, added on this branch
+driver Script - all bash scripting is done on this branch  
+Build tools - ant
+
+# Workflow
+
+# Coding Conventions
+
+# Build Command
+
+# AOB
