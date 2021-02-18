@@ -1,8 +1,6 @@
 public class Simulator {
     /**
-     *
      *  simulates the generic stack functionality
-     *
      */
     private Stack stack;
 
@@ -11,6 +9,10 @@ public class Simulator {
      */
     public Simulator() {
         stack = new Stack();
+    }
+
+    public Stack getStack() {
+        return stack;
     }
 
     /**
