@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Project" default="compile">
+<project name="Project" default="init">
 
     <description>
         Build file for project
@@ -9,8 +9,11 @@
     <property name="classes" location="classes"/>
 
     <target name="init" description="setting up directory needed for compiled files">
-        <mkdir dir="${classes}/">
+        <mkdir dir="${classes}"/>
     </target>
 
+    <target name="compile" description="compile java files" depends="init">
+        <javac srcdir="${src}" destdir="${classes}"/>
+    </target>
 
 </project>
