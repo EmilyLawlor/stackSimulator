@@ -11,6 +11,7 @@ public class Stack {
     private List<String> stack;
     private int cursor;
 
+
     public Stack() {
         this.stack = new ArrayList<String>();
         this.cursor = 0;
@@ -49,7 +50,7 @@ public class Stack {
     /**
      * prints the entire stack, starting from the top working down
      */
-    public void print(){
+    public void show(){
         int i = this.cursor - 1;
         while (i>=0){
             System.out.println(this.stack.get(i));
