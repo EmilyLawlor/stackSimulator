@@ -1,6 +1,11 @@
 public class Simulator {
+
     /**
-     *  simulates the generic stack functionality
+     *
+     * simulator class initialises new, empty stack
+     * calls the appropriate methods of the stack class which match the parameter passed in from the command line
+     *
+     * @param args command sequence passed in from command line
      */
     public static void main(String[] args) {
 
