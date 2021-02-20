@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Stack {
     /**
@@ -8,12 +7,17 @@ public class Stack {
      * element at the top of the stack and to view the entire stack
      *
      */
-    private List<String> stack;
+    private ArrayList<String> stack;
     private int cursor;
 
+
     public Stack() {
-        this.stack = new ArrayList<String>();
+        this.stack = new ArrayList<>();
         this.cursor = 0;
+    }
+
+    public ArrayList<String> getStack() {
+        return stack;
     }
 
     /**
@@ -49,7 +53,7 @@ public class Stack {
     /**
      * prints the entire stack, starting from the top working down
      */
-    public void print(){
+    public void show(){
         int i = this.cursor - 1;
         while (i>=0){
             System.out.println(this.stack.get(i));
