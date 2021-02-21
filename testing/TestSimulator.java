@@ -16,7 +16,7 @@ public class TestSimulator{
 
     @Test
     public void testingPushFunction(){
-        Simulator stack = new Simulator();
+        Stack stack = new Stack();
         stack.push("first");
         stack.push("second");
         stack.push("third");
@@ -24,13 +24,13 @@ public class TestSimulator{
         testStack.add("first");
         testStack.add("second");
         testStack.add("third");
-        assertEquals(testStack, stack.getStack().getStack());
+        assertEquals(testStack, stack.getStack());
     }
 
 
     @Test
     public void testingPopFunction() {
-        Simulator stack = new Simulator();
+        Stack stack = new Stack();
         stack.push("first");
         stack.push("second");
         stack.push("third");
@@ -42,7 +42,7 @@ public class TestSimulator{
     public void testingShowFunction(){
         System.setOut(new PrintStream(outputStreamCaptor));
 
-        Simulator stack = new Simulator();
+        Stack stack = new Stack();
         stack.push("first");
         stack.push("second");
         stack.push("third");

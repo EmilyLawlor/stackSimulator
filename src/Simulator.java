@@ -1,41 +1,25 @@
 public class Simulator {
-    /**
-     *  simulates the generic stack functionality
-     */
-    private Stack stack;
 
     /**
-     * initialises an empty stack
+     *
+     * simulator class initialises new, empty stack
+     * calls the appropriate methods of the stack class which match the parameter passed in from the command line
+     *
+     * @param args command sequence passed in from command line
      */
-    public Simulator() {
-        stack = new Stack();
+    public static void main(String[] args) {
+
+        Stack stack = new Stack();
+        for (int i = 0; i < args.length; i++) {
+            if (args[i].equals("push")) {
+                stack.push(args[i + 1]);
+                i++;
+            } else if (args[i].equals("pop")) {
+                stack.pop();
+            } else if (args[i].equals("show")){
+                stack.show();
+            }
+        }
     }
 
-    public Stack getStack() {
-        return stack;
-    }
-
-    /**
-     * adds the element "text" to the top of the stack
-     * @param text element of type String to be added to teh stack
-     */
-    public void push(String text){
-        this.stack.push(text);
-    }
-
-    /**
-     * takes the element at the top of the stack off the stack and returns it
-     * @return the element that was at the top of the stack
-     */
-    public String pop(){
-        return this.stack.pop();
-    }
-
-    /**
-     * prints each element of the stack on a new line, starting at the top (the item that was added most recently) down
-     * to the bottom of the stack(item that was added first)
-     */
-    public void show() {
-        this.stack.print();
-    }
 }
