@@ -16,4 +16,8 @@
         <javac srcdir="${src}" destdir="${classes}"/>
     </target>
 
+    <target name="compress" description="creates .jar file for the project" depends="compile">
+        <jar jarfile="Main.jar" manifest="manifest.txt" basedir="." includes="*.class"/>
+    </target>
+
 </project>
