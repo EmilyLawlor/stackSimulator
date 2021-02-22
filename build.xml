@@ -5,19 +5,20 @@
         Build file for project
     </description>
 
-    <property name="src" location="src"/>
-    <property name="classes" location="classes"/>
+    <property name="src-dir" location="src"/>
+    <property name="classes-dir" location="classes"/>
+    <property name="text-dir" location="text"/>
 
     <target name="init" description="setting up directory needed for compiled files">
-        <mkdir dir="${classes}"/>
+        <mkdir dir="${classes-dir}"/>
     </target>
 
     <target name="compile" description="compile java files" depends="init">
-        <javac srcdir="${src}" destdir="${classes}"/>
+        <javac srcdir="${src-dir}" destdir="${classes-dir}"/>
     </target>
 
     <target name="compress" description="creates .jar file for the project" depends="compile">
-        <jar jarfile="Main.jar" manifest="manifest.txt" basedir="." includes="*.class"/>
+        <jar jarfile="Main.jar" manifest="${text-dir}/manifest.txt" basedir="." includes="*.class"/>
     </target>
 
 </project>
