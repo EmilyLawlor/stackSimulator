@@ -5,17 +5,37 @@
         Build file for project
     </description>
 
-    <property name="src-dir" location="src" description="java source files directory"/>
-    <property name="classes-dir" location="classes" description="compiled classes directory"/>
-    <property name="text-dir" location="text" description="text files directory"/>
-    <property name="jar-dir" location="bin" description="jar directory"/>
+    <property name="src-dir" value="src" description="java source files directory"/>
+    <property name="classes-dir" value="classes" description="compiled classes directory"/>
+    <property name="text-dir" value="text" description="text files directory"/>
+    <property name="jar-dir" value="bin" description="jar directory"/>
+    <property name="test-dir" value="testing" description="JUnit test class directory"/>
+    <property name="out" value="out" description="directory holding all outputs"/>
 
-    <target name="init" description="setting up directory needed for compiled files">
+    <target name="init" description="setting up directories needed for build">
         <mkdir dir="${classes-dir}"/>
+        <mkdir dir="${jar-dir}"/>
+        <mkdir dir="${out}"/>
+        <echo> "init" </echo>
     </target>
 
     <target name="compile" description="compile java files" depends="init">
-        <javac srcdir="${src-dir}" destdir="${classes-dir}"/>
+        <javac srcdir="${src-dir}" destdir="${classes-dir}" description="compile Simulator and Stack java classes"/>
+        <javac srcdir="${test-dir}" destdir="${classes-dir}" description="compile JUnit class"/>
+        <echo> "compile" </echo>
+    </target>
+
+    <target name="JUnit testing" description="run all junit tests" depends="compile">
+        <mkdir dir="${out}/JUnitTests"/>
+
+        <junit printsummary="yes" haltonfailure="yes">
+            <test name="${classes-dir}.TestSimulator" haltonfailure="no" outfile="result">
+                <formatter type="plain"/>
+                <formatter type="xml"/>
+            </test>
+        </junit>
+
+        <echo> "JUnit" </echo>
     </target>
 
     <target name="compress" description="creates .jar file for the project" depends="compile">
@@ -23,6 +43,8 @@
              manifest="${text-dir}/manifest.txt"
              basedir="${jar-dir}"
              includes="*.class"/>
+
+        <echo> "compress" </echo>
     </target>
 
 </project>
