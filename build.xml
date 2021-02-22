@@ -5,9 +5,10 @@
         Build file for project
     </description>
 
-    <property name="src-dir" location="src"/>
-    <property name="classes-dir" location="classes"/>
-    <property name="text-dir" location="text"/>
+    <property name="src-dir" location="src" description="java source files directory"/>
+    <property name="classes-dir" location="classes" description="compiled classes directory"/>
+    <property name="text-dir" location="text" description="text files directory"/>
+    <property name="jar-dir" location="bin" description="jar directory"/>
 
     <target name="init" description="setting up directory needed for compiled files">
         <mkdir dir="${classes-dir}"/>
@@ -18,7 +19,10 @@
     </target>
 
     <target name="compress" description="creates .jar file for the project" depends="compile">
-        <jar jarfile="Main.jar" manifest="${text-dir}/manifest.txt" basedir="." includes="*.class"/>
+        <jar jarfile="${jar-dir}/Main.jar"
+             manifest="${text-dir}/manifest.txt"
+             basedir="${jar-dir}"
+             includes="*.class"/>
     </target>
 
 </project>
