@@ -6,41 +6,59 @@
     </description>
 
     <property name="src-dir" value="src" description="java source files directory"/>
-    <property name="classes-dir" value="classes" description="compiled classes directory"/>
-    <property name="text-dir" value="text" description="text files directory"/>
-    <property name="jar-dir" value="bin" description="jar directory"/>
     <property name="test-dir" value="testing" description="JUnit test class directory"/>
+    <property name="text-dir" value="text" description="text files directory"/>
+
     <property name="out" value="out" description="directory holding all outputs"/>
+    <property name="classes-dir" value="classes" description="compiled classes directory"/>
+    <property name="jar-dir" value="bin" description="jar directory"/>
+
+    <property name="lib" value="lib"/>
+
+
+    <path id="classpath">
+        <path location="${lib}">
+            <fileset dir="${lib}" includes="*.jar"></fileset>
+        </path>
+    </path>
+
 
     <target name="clean" description="removes all intermediary files">
-        <delete dir="${classes-dir}"/>
-        <delete dir="${jar-dir}"/>
         <delete dir="${out}"/>
     </target>
 
+
     <target name="init" description="setting up directories needed for build">
-        <mkdir dir="${classes-dir}"/>
-        <mkdir dir="${jar-dir}"/>
         <mkdir dir="${out}"/>
+        <mkdir dir="${out}/${classes-dir}"/>
+        <mkdir dir="${out}/${jar-dir}"/>
     </target>
+
 
     <target name="compile" description="compile java files" depends="init">
-        <javac srcdir="${src-dir}" destdir="${classes-dir}" description="compile Simulator and Stack java classes" includeantruntime="false"/>
-        <javac srcdir="${test-dir}" destdir="${classes-dir}" description="compile JUnit class" includeantruntime="false"/>
+        <javac srcdir="${src-dir}" destdir="${out}/${classes-dir}" description="compile Simulator and Stack java classes"
+               includeantruntime="false"/>
+        <javac classpathref="classpath" srcdir="${test-dir}" destdir="${out}/${classes-dir}" description="compile JUnit class" includeantruntime="false"/>
     </target>
 
-    <target name="JUnit testing" description="run all junit tests" depends="compile">
-        <mkdir dir="${out}/JUnitTests"/>
+
+    <target name="JUnitTesting" description="run all junit tests" depends="compile">
+        <mkdir dir="${out}/JUnitTestReports"/>
 
         <junit printsummary="yes" haltonfailure="yes">
-                <formatter type="plain" usefile="false"/> <!-- outputs report to screen not to report file -->
-                <formatter type="xml"/>
 
-            <batchtest>
-                <fileset dir="${classes-dir}" includes="**/*Test*.class"/>
+            <classpath refid="classpath"/>
+            <classpath location="${out}/${classes-dir}" />
+
+            <formatter type="plain" usefile="false"/> <!-- outputs report to screen not to report file -->
+            <formatter type="xml"/>
+
+            <batchtest todir="${out}/JUnitTestReports">
+                <fileset dir="${out}/${classes-dir}" includes="**/*Test*.class"/>
             </batchtest>
         </junit>
     </target>
+
 
     <target name="compress" description="creates .jar file for the project" depends="compile">
         <jar jarfile="${jar-dir}/Main.jar"
