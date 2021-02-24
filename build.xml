@@ -18,7 +18,9 @@
 
     <path id="classpath">
         <path location="${lib}">
-            <fileset dir="${lib}" includes="*.jar"></fileset>
+            <fileset dir="${lib}">
+                <include name="*.jar"/>
+            </fileset>
         </path>
     </path>
 
@@ -61,9 +63,9 @@
 
 
     <target name="compress" description="creates .jar file for the project" depends="compile">
-        <jar jarfile="${jar-dir}/Main.jar"
-             manifest="${text-dir}/manifest.txt"
-             basedir="${jar-dir}"
+        <jar jarfile="${out}/${jar-dir}/Main.jar"
+             manifest="${text-dir}/manifest"
+             basedir="${out}/${classes-dir}"
              includes="*.class"/>
     </target>
 
