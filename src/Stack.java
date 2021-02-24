@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 
+/**
+ *
+ * initialises an empty stack and supplies methods to add, remove elements to the stack, and a method to view the
+ * element at the top of the stack and to view the entire stack
+ *
+ */
 public class Stack {
-    /**
-     *
-     * initialises an empty stack and supplies methods to add, remove elements to the stack, and a method to view the
-     * element at the top of the stack and to view the entire stack
-     *
-     */
+
     private ArrayList<String> stack;
     private int cursor;
 
@@ -14,10 +15,6 @@ public class Stack {
     public Stack() {
         this.stack = new ArrayList<>();
         this.cursor = 0;
-    }
-
-    public ArrayList<String> getStack() {
-        return stack;
     }
 
     /**
