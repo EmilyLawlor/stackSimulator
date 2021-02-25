@@ -18,8 +18,8 @@
 
     <!-- include jars needed, e.g. JUnit, in class path -->
     <path id="classpath">
-        <path location="${lib}">
-            <fileset dir="${lib}">
+        <path location="../lib">
+            <fileset dir="../lib">
                 <include name="*.jar"/>
             </fileset>
         </path>
@@ -71,7 +71,7 @@
     <!-- Generate javadocs for current project into ${documentation-dir} -->
     <target name="JavaDoc" description="generate Javadoc documentation" depends="init">
         <javadoc sourcepath="${src-dir}" destdir="${out}/${documentation-dir}">
-            <fileset dir="${src-dir}">
+            <fileset dir="../src">
                 <include name="**" />
             </fileset>
         </javadoc>
@@ -81,7 +81,7 @@
     <!-- if build, testing, and documentation steps completed, java class are compressed into a jar file and stored in ${out}/${jar-dir} -->
     <target name="compress" description="creates .jar file for the project" depends="init, compile, JUnitTesting">
         <jar jarfile="${out}/${jar-dir}/Main.jar"
-             manifest="${text-dir}/manifest"
+             manifest="../text/manifest"
              basedir="${out}/${classes-dir}"
              includes="*.class"/>
     </target>
