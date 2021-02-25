@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
-<project name="Project" default="init">
+<project name="Project" default="compress">
 
     <description>
         Build file for project
     </description>
 
-    <property name="src-dir" value="../src" description="java source files directory"/>
-    <property name="test-dir" value="../testing" description="JUnit test class directory"/>
-    <property name="text-dir" value="../text" description="text files directory"/>
+    <property name="src-dir" value="src" description="java source files directory"/>
+    <property name="test-dir" value="testing" description="JUnit test class directory"/>
+    <property name="text-dir" value="text" description="text files directory"/>
 
-    <property name="out" value="../out" description="directory holding all outputs"/>
-    <property name="classes-dir" value="../out/classes" description="compiled classes directory"/>
-    <property name="jar-dir" value="../out/bin" description="jar directory"/>
-    <property name="documentation-dir" value="../out/documentation" description="all file generated from javadoc stored in this folder"/>
+    <property name="out" value="out" description="directory holding all outputs"/>
+    <property name="classes-dir" value="out/classes" description="compiled classes directory"/>
+    <property name="jar-dir" value="out/bin" description="jar directory"/>
+    <property name="documentation-dir" value="documentation" description="all file generated from javadoc stored in this folder"/>
 
-    <property name="lib" value="..\lib"/>
+    <property name="lib" value="lib"/>
 
     <!-- include jars needed, e.g. JUnit, in class path -->
     <path id="classpath">
-        <path location="${lib}">
-            <fileset dir="${lib}">
+        <path location="lib">
+            <fileset dir="lib">
                 <include name="**/*.jar"/>
             </fileset>
         </path>
@@ -29,6 +29,7 @@
     <!-- removes any intermediary files-->
     <target name="clean" description="removes all intermediary files">
         <delete dir="${out}"/>
+        <delete dir="${documentation-dir}"/>
     </target>
 
 
@@ -41,7 +42,7 @@
     </target>
 
 
-    <!-- compiles both the Simulator and Stack classes and the Test class, stores compiled classes in ${out}/${classes-dir} -->
+    <!-- compiles both the Simulator and Stack classes and the Test class, stores compiled classes in ${classes-dir} -->
     <target name="compile" description="compile java files" depends="init">
         <javac srcdir="${src-dir}" destdir="${classes-dir}" description="compile Simulator and Stack java classes"
                includeantruntime="false"/>
@@ -73,19 +74,33 @@
     <!-- Generate javadocs for current project into ${documentation-dir} -->
     <target name="JavaDoc" description="generate Javadoc documentation" depends="init">
         <javadoc sourcepath="${src-dir}" destdir="${documentation-dir}">
-            <fileset dir="../src">
+            <fileset dir="${src-dir}">
                 <include name="**" />
             </fileset>
         </javadoc>
     </target>
 
 
-    <!-- if build, testing, and documentation steps completed, java class are compressed into a jar file and stored in ${out}/${jar-dir} -->
-    <target name="compress" description="creates .jar file for the project" depends="init, compile, JUnitTesting">
+    <!-- if build, testing, and documentation steps completed, java class are compressed into a jar file and stored in ${jar-dir} -->
+    <target name="compress" description="creates .jar file for the project" depends="clean, JavaDoc, JUnitTesting">
         <jar jarfile="${jar-dir}/Main.jar"
-             manifest="../text/manifest"
+             manifest="${text-dir}/manifest"
              basedir="${classes-dir}"
              includes="*.class"/>
     </target>
+
+
+    <!-- copies only the files needed to run the program to the users home directory -->
+    <target name="copy" depends="compress">
+        <copy todir="C:/Users/emily/Project">
+            <fileset dir="../Project">
+                <exclude name="**/JUnitTestReports/**"/>
+                <exclude name="**/.idea/**"/>
+                <exclude name="**/src/**"/>
+                <exclude name="**/testing/**"/>
+            </fileset>
+        </copy>
+    </target>
+
 
 </project>
