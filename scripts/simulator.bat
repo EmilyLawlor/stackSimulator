@@ -1,2 +1,1 @@
-java -cp src Simulator %*
-
+java -jar "out/bin/Main.jar" %*
