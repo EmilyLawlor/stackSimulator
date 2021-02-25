@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="DESKTOP-3J7L79P" name="TestSimulator" skipped="0" tests="3" time="0.053" timestamp="2021-02-25T12:17:46">
+  <properties>
+    <property name="sun.desktop" value="windows" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="ant.library.dir" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="11" />
+    <property name="lib" value="..\lib" />
+    <property name="ant.project.name" value="Project" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.class.path" value="C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.base;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.compiler;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.datatransfer;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.desktop;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.instrument;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.logging;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.management;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.management.rmi;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.naming;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.net.http;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.prefs;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.rmi;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.scripting;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.se;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.security.jgss;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.security.sasl;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.smartcardio;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.sql;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.sql.rowset;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.transaction.xa;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.xml;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\java.xml.crypto;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.accessibility;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.attach;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.charsets;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.compiler;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.crypto.cryptoki;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.crypto.ec;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.crypto.mscapi;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.dynalink;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.editpad;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.hotspot.agent;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.httpserver;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.internal.ed;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.internal.jvmstat;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.internal.le;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.internal.opt;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jartool;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.javadoc;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jcmd;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jconsole;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jdeps;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jdi;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jdwp.agent;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jfr;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jlink;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jshell;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jsobject;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.jstatd;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.localedata;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.management;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.management.agent;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.management.jfr;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.naming.dns;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.naming.rmi;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.net;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.pack;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.rmic;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.scripting.nashorn;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.scripting.nashorn.shell;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.sctp;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.security.auth;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.security.jgss;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.unsupported;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.unsupported.desktop;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.xml.dom;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot!\jdk.zipfs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-antlr.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-bcel.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-bsf.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-log4j.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-oro.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-regexp.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-resolver.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-apache-xalan2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-commons-logging.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-commons-net.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-jai.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-javamail.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-jdepend.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-jmf.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-jsch.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-junit.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-junit4.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-junitlauncher.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-launcher.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-netrexx.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-swing.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-testutil.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant-xz.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\idea_rt.jar" />
+    <property name="java.vm.vendor" value="AdoptOpenJDK" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="user.variant" value="" />
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/" />
+    <property name="user.timezone" value="" />
+    <property name="java.vm.specification.version" value="11" />
+    <property name="os.name" value="Windows 10" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="IE" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin" />
+    <property name="sun.java.command" value="com.intellij.rt.ant.execution.AntMain2 -logger com.intellij.rt.ant.execution.IdeaAntLogger2 -inputhandler com.intellij.rt.ant.execution.IdeaInputHandler -buildfile C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\buildTools\build.xml compress" />
+    <property name="jdk.debug" value="release" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\emily" />
+    <property name="user.language" value="en" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2020-07-14" />
+    <property name="java.home" value="C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot" />
+    <property name="basedir" value="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\buildTools" />
+    <property name="file.separator" value="\" />
+    <property name="ant.file.type.Project" value="file" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="ant.java.version" value="11" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="test-dir" value="../testing" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.runtime.version" value="11.0.8+10" />
+    <property name="ant.file.Project" value="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\buildTools\build.xml" />
+    <property name="user.name" value="emily" />
+    <property name="ant.file" value="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\buildTools\build.xml" />
+    <property name="path.separator" value=";" />
+    <property name="out" value="../out" />
+    <property name="os.version" value="10.0" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.project.invoked-targets" value="compress" />
+    <property name="classes-dir" value="../out/classes" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="documentation-dir" value="../out/documentation" />
+    <property name="java.vm.name" value="OpenJDK Client VM" />
+    <property name="src-dir" value="../src" />
+    <property name="java.vendor.version" value="AdoptOpenJDK" />
+    <property name="ant.core.lib" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues" />
+    <property name="java.io.tmpdir" value="C:\Users\emily\AppData\Local\Temp\" />
+    <property name="java.version" value="11.0.8" />
+    <property name="user.dir" value="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\buildTools" />
+    <property name="os.arch" value="x86" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="ant.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\ant" />
+    <property name="jar-dir" value="../out/bin" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.5 compiled on July 10 2018" />
+    <property name="java.library.path" value="C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PuTTY\;C:\Users\emily\OneDrive\Documents\apache-ant-1.9.15\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\emily\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\emily\AppData\Local\Programs\Python\Python37-32\;C:\Users\emily\AppData\Local\Microsoft\WindowsApps;C:\Users\emily\AppData\Local\atom\bin;C:\Users\emily\AppData\Local\Microsoft\WindowsApps;C:\Users\emily\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\emily\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk1.8.0_211;;." />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.vendor" value="AdoptOpenJDK" />
+    <property name="java.vm.version" value="11.0.8+10" />
+    <property name="text-dir" value="../text" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="java.class.version" value="55.0" />
+    <property name="ant.project.default-target" value="init" />
+  </properties>
+  <testcase classname="TestSimulator" name="testingPopFunction" time="0.005" />
+  <testcase classname="TestSimulator" name="testingPushFunction" time="0.0" />
+  <testcase classname="TestSimulator" name="testingShowFunction" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

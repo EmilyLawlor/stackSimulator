@@ -17,6 +17,10 @@ public class Stack {
         this.cursor = 0;
     }
 
+    public ArrayList<String> getStack() {
+        return stack;
+    }
+
     /**
      *
      * add a new element to the top of the stack, move the cursor onto this element
