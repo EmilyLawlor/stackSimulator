@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar "out/bin/Main.jar" %*
+java -jar "out/bin/Main.jar" "$@"
