@@ -16,11 +16,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31117078-c294-4d10-8e57-52956040235c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/simulator.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/simulator.bat" afterDir="false" />
-    </list>
+    <list default="true" id="b984dc02-3026-445b-afe9-047fb8b705bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
