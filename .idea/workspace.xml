@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-
-  <component>
-    <list default="true" id="31117078-c294-4d10-8e57-52956040235c" name="Default Changelist" comment="">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b984dc02-3026-445b-afe9-047fb8b705bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/simulator.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/simulator.bat" afterDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-
   <component name="ProjectId" id="1p1VmzcuvPFS1MlYE2o70YE5OuT" />
-
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -36,28 +39,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project" />
       <recent name="C:\Users\emily\OneDrive\Documents\College-DESKTOP-3J7L79P\Year 3\WorkplaceTechnologies\Ass1\Project\text" />
     </key>
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.xml" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
-
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="31117078-c294-4d10-8e57-52956040235c" name="Default Changelist" comment="" />
-
       <created>1614350751500</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614350751500</updated>
-
     </task>
     <servers />
   </component>
@@ -74,7 +69,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-
     <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614351378214">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
@@ -91,7 +85,6 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2416" y="233" key="run.anything.popup/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1614351068182" />
-
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project$TestSimulator.ic" NAME="TestSimulator Coverage Results" MODIFIED="1613582479973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
