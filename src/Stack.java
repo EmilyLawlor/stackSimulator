@@ -14,7 +14,7 @@ public class Stack {
 
     public Stack() {
         this.stack = new ArrayList<>();
-        this.cursor = 0;
+        this.cursor = 0;    // counter keeps track of number of items added to stack, points to newest element
     }
 
     public ArrayList<String> getStack() {
@@ -44,12 +44,6 @@ public class Stack {
         return this.stack.remove((this.cursor));
     }
 
-    /**
-     * prints the element at the top of the stack to the console
-     */
-    public void top(){
-        System.out.println(this.stack.get((this.cursor-1)));
-    }
 
     /**
      * prints the entire stack, starting from the top working down

@@ -1,0 +1,239 @@
+commit c92d798e29f70831b5b879b49152e7022a2cf7fd
+Author: emily <emily.lawlor@gmail.com>
+Date:   Wed Feb 24 20:49:56 2021 +0000
+
+    java coding covention and ant build commands added to README file
+
+commit a2a7c85240a860ed5cc6bb299185eb3949f29cd7
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 17:37:40 2021 +0000
+
+    javaDoc comments added to TestSimulator class
+
+commit 7eeedc183179b10808b1e3629cdcc7c5439d6c85
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 17:27:59 2021 +0000
+
+    extra comments added to simulator class
+
+commit ae6dae8f7278f34641df79e6a307ae3968626dd2
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 17:25:19 2021 +0000
+
+    add extra comments to stack class, remove unnecessary top() method from stack class
+
+commit 74d7b0aadfc1f76fa65f86c5e5d9314f192f1827
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 17:16:37 2021 +0000
+
+    README file now reflects updated directory structure
+
+commit e10c2f74d9783a593dbe77ab348e04843ff30415
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 16:52:44 2021 +0000
+
+    targets compile and JUnitTesting complete with no errors
+
+commit d82cf7e1651545c51c486cf308c804caade6d8b6
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 16:31:43 2021 +0000
+
+    junit jar added to be used by ant
+
+commit 26368c8c383f35e5c89b06bfb184b412af9a4d17
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 23 13:12:04 2021 +0000
+
+    clean target added to build file
+
+commit 902f0418bc6d91c5ad2492f1c12530070d9a6278
+Author: emily <emily.lawlor@gmail.com>
+Date:   Mon Feb 22 19:46:59 2021 +0000
+
+    ant target for running all JUnit tests
+
+commit afa9761d3e11af4910c5845751afc7ed455ac584
+Author: emily <emily.lawlor@gmail.com>
+Date:   Mon Feb 22 18:43:57 2021 +0000
+
+    jar directory added and descriptions for all propertiries added
+
+commit 8fb04fa629f92cbdbfa7735addae4072cc15e0e1
+Author: emily <emily.lawlor@gmail.com>
+Date:   Mon Feb 22 18:40:28 2021 +0000
+
+    create directory 'text' for all text files
+
+commit 7a3f2a9b22022f58c5fb35ae7c9d31811993894f
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sun Feb 21 14:06:30 2021 +0000
+
+    manifest file created
+
+commit 61f6ff7a8c8ab5de69660e0c50c0a73206fb1ed2
+Merge: 19ecee2 21992b4
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sun Feb 21 13:41:30 2021 +0000
+
+    new updates pulled to ant branch
+
+commit 21992b41c255e059cb838621c6321d7dc843c9d8
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 21:33:25 2021 +0000
+
+    new JavaDoc comments add for updated simulator class
+
+commit cc81ec04d2baa14fe8c8f25c13a897e0abc5e507
+Merge: 5c11f16 92b8f24
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 21:26:34 2021 +0000
+
+    Merge branch 'master' into documentation
+
+commit 92b8f24c7721fa46cce9fd7865991060793006ea
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 21:25:58 2021 +0000
+
+    pulled new changes from master and fix errors in testing caused by update
+
+commit ae04c4335d0591611f81f7defc521fc1a9d70bc7
+Merge: 2c4e8a9 da5c9bb
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 21:23:40 2021 +0000
+
+    recompiled simulator and stack classes to run
+
+commit da5c9bb792ea64ddee3a1d03456d9e42838c02a7
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 21:19:12 2021 +0000
+
+    simulator script calls main of simulator class and passes along arguments
+
+commit 2c4e8a9c6943d7aea3468e064214986ad1fd1a2a
+Merge: 3499bbf a53d720
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 18:42:32 2021 +0000
+
+    Merge branch 'testing'
+
+commit a53d720f0c7bdb8e45bd8e603284671b18eee85d
+Author: emily <emily.lawlor@gmail.com>
+Date:   Sat Feb 20 18:41:07 2021 +0000
+
+    tests moved to their own folder
+
+commit 19ecee2492e0a125bea07a735ab6c7b3af767fb1
+Author: emily <emily.lawlor@gmail.com>
+Date:   Fri Feb 19 17:04:11 2021 +0000
+
+    compile target added to ant build file
+
+commit 6f9424f41299b1b45fd7547a0ab3c5fd4df01519
+Author: emily <emily.lawlor@gmail.com>
+Date:   Fri Feb 19 16:59:21 2021 +0000
+
+    target init created in ant build file
+
+commit 93f2a1f761095428bc6294d57dfb5545015962a5
+Author: emily <emily.lawlor@gmail.com>
+Date:   Fri Feb 19 16:38:42 2021 +0000
+
+    ant build file created
+
+commit 3499bbfc514331c4a021f681458d406c6fe0cf2d
+Merge: 775f75c 688af58
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 17:29:15 2021 +0000
+
+    Merge branch 'testing'
+
+commit 775f75c6c2c4dcac237a983d679392f947bcc6c9
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 17:29:07 2021 +0000
+
+    updated stack class
+
+commit af6ac938d2bf1ef98725d49ee43a09ace26d806b
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 17:27:27 2021 +0000
+
+    minor update to stack class
+
+commit 5c11f167a9b91d26d552fe8577ea20bdb7427bf0
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 17:20:08 2021 +0000
+
+    README file created
+
+commit a3332966817b24536598a3ddf383d9d04050aa9e
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 17:08:51 2021 +0000
+
+    main method in simulator class for shell script to call
+
+commit ea34514444f2c6f07e1b9b5c914e8e2d78ed8e9c
+Author: emily <emily.lawlor@gmail.com>
+Date:   Thu Feb 18 14:59:43 2021 +0000
+
+    create bash file for the simulator script
+
+commit 688af5833da6f70bf49abe2ee1e041d37e6b334e
+Author: emily <emily.lawlor@gmail.com>
+Date:   Wed Feb 17 18:24:54 2021 +0000
+
+    JUnit test for show function passing
+
+commit 9c4724e28eea52c97bc52654aaa844225d079af4
+Author: emily <emily.lawlor@gmail.com>
+Date:   Wed Feb 17 17:30:51 2021 +0000
+
+    JUnit test for pop function created
+
+commit 29cca26a4a106ee1bd3beb81cbb773697814d474
+Author: emily <emily.lawlor@gmail.com>
+Date:   Wed Feb 17 17:27:23 2021 +0000
+
+    first test for push function passing
+
+commit 43d1cbe0c3d472c4aea35184ea1be5d1abfc290e
+Author: emily <emily.lawlor@gmail.com>
+Date:   Wed Feb 17 17:06:03 2021 +0000
+
+    creating test simulator class to test methods
+
+commit 61cebcc977944a08c4df690922ac4f3991f3ba37
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 13:16:20 2021 +0000
+
+    JavaDoc comments added for the Simulator class
+
+commit fdb62f21c0b20fe53b5d071a44012add7533d4cc
+Merge: 777523d 48c8520
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 13:11:01 2021 +0000
+
+    Merge branch 'master' into documentation
+
+commit 48c85202139eaa2eeab038b7efa0c14fc5ad93f1
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 13:10:18 2021 +0000
+
+    implementation for the simlator class
+
+commit 777523d23606e36fc38947cbb5090c68f3553cdc
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 13:06:18 2021 +0000
+
+    documentation for stack class
+
+commit da4c9c2fbdb9ccdc72b6064ecbee18be73cbe68c
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 13:01:57 2021 +0000
+
+    implementation for stack class
+
+commit a49825744d2bb38244614a1a596ba8b4f263a6f1
+Author: emily <emily.lawlor@gmail.com>
+Date:   Tue Feb 16 12:59:44 2021 +0000
+
+    git repository set up
