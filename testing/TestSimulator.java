@@ -46,7 +46,7 @@ public class TestSimulator{
         stack.push("first");
         stack.push("second");
         stack.push("third");
-        String expected = "third" + "\r\n" + "second" + "\r\n" + "first";
+        String expected = "third\nsecond\nfirst";
         stack.show();
 
         assertEquals(expected, outputStreamCaptor.toString()
