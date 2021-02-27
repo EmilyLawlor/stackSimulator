@@ -1,20 +1,25 @@
 <?xml version="1.0"?>
-<project name="Project" default="compress">
+<project name="Project" default="deployment">
 
     <description>
         Build file for project
     </description>
 
+    <!-- directories -->
     <property name="src-dir" value="src" description="java source files directory"/>
     <property name="test-dir" value="testing" description="JUnit test class directory"/>
     <property name="text-dir" value="text" description="text files directory"/>
+    <property name="scripts-dir" value="scripts" description="driver script files directory"/>
 
+    <!-- directories where all generated files/classes/jars will be stored -->
     <property name="out" value="out" description="directory holding all outputs"/>
     <property name="classes-dir" value="out/classes" description="compiled classes directory"/>
     <property name="jar-dir" value="out/bin" description="jar directory"/>
     <property name="documentation-dir" value="documentation" description="all file generated from javadoc stored in this folder"/>
 
-    <property name="lib" value="lib"/>
+    <property name="lib" value="lib" description="directory containing jar files"/>
+
+    <property name="home-dir" value="/home/ubuntu" description="users home directory"/>
 
     <!-- include jars needed, e.g. JUnit, in class path -->
     <path id="classpath">
@@ -82,7 +87,7 @@
 
 
     <!-- if build, testing, and documentation steps completed, java class are compressed into a jar file and stored in ${jar-dir} -->
-    <target name="compress" description="creates .jar file for the project" depends="clean, JavaDoc, JUnitTesting">
+    <target name="compress" description="creates .jar file for the project" depends="compile">
         <jar jarfile="${jar-dir}/Main.jar"
              manifest="${text-dir}/manifest"
              basedir="${classes-dir}"
@@ -90,16 +95,16 @@
     </target>
 
 
-    <!-- copies only the files needed to run the program to the users home directory -->
-    <target name="copy" depends="compress">
-        <copy todir="C:/Users/emily/Project">
-            <fileset dir="../Project">
-                <exclude name="**/JUnitTestReports/**"/>
-                <exclude name="**/.idea/**"/>
-                <exclude name="**/src/**"/>
-                <exclude name="**/testing/**"/>
-            </fileset>
-        </copy>
+    <!-- deployment only goes ahead if building, testing and documentation steps successful, therefore depends on compress
+     (compile through this) and JavaDoc and JUnitTesting. Must only be deployed in a clean state, therefore
+     depends on clean, only files needed to run are included in tar file-->
+    <target name="deployment" depends="clean, compress, JavaDoc, JUnitTesting" description="create tar file of project">
+        <tar destfile="${home-dir}/project.tgz" compression="gzip" >
+            <tarfileset dir="../Project">
+                <include name="**/${scripts-dir}/*"/>
+                <include name="**/${jar-dir}/*"/>
+            </tarfileset>
+        </tar>
     </target>
 
 
